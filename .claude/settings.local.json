@@ -3,7 +3,13 @@
     "allow": [
       "Bash(git --version)",
       "Bash(gh --version)",
-      "Bash(git init *)"
+      "Bash(git init *)",
+      "Bash(awk -F/ '{print $1}')",
+      "Bash(git config *)",
+      "Bash(echo \"user.name: $\\(git config user.name\\)\")",
+      "Bash(echo \"user.email: $\\(git config user.email\\)\")",
+      "Bash(git commit -q -m 'Initial commit: 2D platformer with dash, enemy patrol, checkpoints *)",
+      "Bash(gh auth *)"
     ]
   }
 }
