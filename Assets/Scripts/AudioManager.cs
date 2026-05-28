@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource[] soundEffects;
 
+    public AudioSource bgm, levelEndMusic;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,7 @@ public class AudioManager : MonoBehaviour
     {
         soundEffects[soundToPlay].Stop();
 
-        soundEffects[soundToPlay].pitch = Random.Range(.9f, 1,1f);
+        soundEffects[soundToPlay].pitch = Random.Range(.9f, 1.1f);
 
         soundEffects[soundToPlay].Play();
     }
