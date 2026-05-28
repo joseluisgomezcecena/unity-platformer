@@ -70,6 +70,9 @@ public class PlayerHealthController : MonoBehaviour
 
                 PlayerController.instance.Knockback();
 
+                AudioManager.instance.PlaySFX(9);//Player hurt sound.
+
+
             }
 
             UIController.instance.UpdateHealthDisplay();

@@ -328,13 +328,16 @@ public class PlayerController : MonoBehaviour
         jumpBufferCounter = 0f;
         isJumping = true;
         
+        AudioManager.instance.PlaySFX(10); //player jumps sound.
+
         Debug.Log($"Jump! Running: {running}, Force: {currentJumpForce}, Speed: {speedWhenJumped}");
     }
 
     private void ExecuteDoubleJump()
     {
         float currentJumpForce = wasRunningWhenJumped ? runJumpForce : jumpForce;
-        
+                AudioManager.instance.PlaySFX(10); //player jumps sound.
+
         theRB.velocity = new Vector2(theRB.velocity.x, currentJumpForce);
         
         canDoubleJump = false;
