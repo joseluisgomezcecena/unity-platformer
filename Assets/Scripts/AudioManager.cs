@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(int soundToPlay)
     {
-        soundEffects[soundEffects].Stop();
+        soundEffects[soundToPlay].Stop();
         soundEffects[soundToPlay].Play();
     }
 }
